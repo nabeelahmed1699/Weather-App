@@ -16,7 +16,6 @@ const pinterest = document.querySelector('.pinterest');
 const twitter = document.querySelector('.twitter');
 const whatsapp = document.querySelector('.whatsapp');
 const linkedin = document.querySelector('.linkedin');
-const reload = document.querySelector('.reload-quote');
 
 // initial display
 city.innerText = 'Loading...';
