@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/favicons/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- StyleSheet -->
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/e0b9e7938f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="card">
+        <div class="search">
+            <input type="text" placeholder="city" class="search-bar">
+            <button><svg xmlns="http://www.w3.org/2000/svg" height="1.5em" width="1.5em" viewBox="0 0 48 48">
+                    <title>search</title>
+                    <g fill="#212121" class="nc-icon-wrapper">
+                        <path
+                            d="M45.268,41.732,32.639,29.1A17.066,17.066,0,1,0,29.1,32.639L41.732,45.268a2.5,2.5,0,0,0,3.536-3.536ZM4,19A15,15,0,1,1,19,34,15.017,15.017,0,0,1,4,19Z"
+                            fill="#212121"></path>
+                    </g>
+                </svg></button>
+        </div>
+        <div class="weather">
+            <h2 class="city"></h2>
+            <h1 class="temp"></h1>
+            <p class="feels_like"></p>
+            <div class="flex">
+                <img class="icon">
+                <p class="condition"></p>
+            </div>
+            <p class="humidity"></p>
+            <div class="wind-speed"></div>
+        </div>
+    </div>
+    <!-- Social Share -->
+    <div class="share-buttons">
+        <h3>Share</h3>
+        <a href="#" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-icon pinterest"><i class="fab fa-pinterest"></i></a>
+        <a href="#" class="social-icon twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-icon whatsapp"><i class="fab fa-whatsapp"></i></a>
+        <a href="#" class="social-icon linkedin"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+    <footer class='footer'>
+        <p>Created By : Nabeel Ahmed</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
