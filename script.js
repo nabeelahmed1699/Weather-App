@@ -89,12 +89,14 @@ let weather = {
 weather.fetchWeather('lahore')
 searchBtn.addEventListener('click', () => {
     let value = searchBar.value;
+    weather.errorHandle('Loading...', 'please wait!');
     weather.fetchWeather(value);
     searchBar.value = '';
 });
 // Enable enter key
 document.addEventListener("keyup", function(event) {
     if (event.keyCode === 13) {
+        weather.errorHandle('Loading...', 'please wait!');
         let value = searchBar.value;
         if (value === '') {
             weather.errorHandle('Enter city name!', 'You forgot to enter the city name.')
