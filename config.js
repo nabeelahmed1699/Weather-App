@@ -1,0 +1,5 @@
+var config = {
+    MY_API_TOKEN: '71ae0690efef535512a',
+    SECRET_API_KEY: '7d3b49429769f',
+    API_KEY: '71ae0690efef535512a7d3b49429769f'
+}

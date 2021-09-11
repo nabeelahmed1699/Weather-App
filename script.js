@@ -1,3 +1,5 @@
+import API_KEY from "./apikey.js";
+
 // Selectors
 const city = document.querySelector('.city');
 const temp = document.querySelector('.temp');
@@ -9,19 +11,18 @@ const windSpeed = document.querySelector('.wind-speed');
 const searchBar = document.querySelector('.search-bar');
 const searchBtn = document.querySelector('.search button');
 // Social media icons
-const facebook = document.querySelector('.facebook')
-const pinterest = document.querySelector('.pinterest')
-const twitter = document.querySelector('.twitter')
-const whatsapp = document.querySelector('.whatsapp')
-const linkedin = document.querySelector('.linkedin')
-const reload = document.querySelector('.reload-quote')
-
+const facebook = document.querySelector('.facebook');
+const pinterest = document.querySelector('.pinterest');
+const twitter = document.querySelector('.twitter');
+const whatsapp = document.querySelector('.whatsapp');
+const linkedin = document.querySelector('.linkedin');
+const reload = document.querySelector('.reload-quote');
 
 // initial display
 city.innerText = 'Loading...';
 let weather = {
     // My api key
-    apiKey: '71ae0690efef535512a7d3b49429769f',
+    apiKey: API_KEY,
 
     // Function to fetch data from api
     fetchWeather: (city) => {
